@@ -1,0 +1,1 @@
+qr = require('qr-image')
