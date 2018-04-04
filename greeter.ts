@@ -1,19 +1,3 @@
-class Student {
-    fullName: string;
-    constructor(public firstName: string, public middleInitial: string, public lastName: string) {
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-}
-
-interface Person {
-    firstName: string;
-    lastName: string;
-}
-
-function greeter(person : Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-let user = new Student("SENSEI", "SD.", "DUCKY");
-
-document.body.innerHTML = greeter(user);
+import 'source-map-support/register';
+import fs from 'fs';
+import path from 'path';
